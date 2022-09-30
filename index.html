@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Happy Birthday Taara!</title>
+
+  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
+  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
+  <link rel="stylesheet" href="styles/style.css" media="all">
+</head>
+
+<body id="body">
+  <canvas id=c></canvas>
+  <canvas id="confetti"></canvas>
+  <div class="container" id="count">
+    <h1 id="head">Countdown to Taara's birthday:</h1>
+    <ul>
+      <li><span id="day"></span>days</li>
+      <li><span id="hour"></span>hours</li>
+      <li><span id="minute"></span>minutes</li>
+      <li><span id="second"></span>seconds</li>
+    </ul>
+  </div>
+  <div id="merrywrap" class="merrywrap">
+    <canvas id="snowfall"></canvas>
+    <div class="giftbox" onclick="playAudio('happy-birthday-to-you-piano-version.mp3')">
+      <div class="cover">
+        <div></div>
+      </div>
+      <div class="box"></div>
+    </div>
+  </div>
+  <div class="heartContainer">
+  </div>
+  <div id="heart" class="heart">
+</body>
+
+<script>
+  // document.addEventListener('mousemove', function (e) {
+  //   let body = document.querySelector('body')
+  //   let heart = document.createElement('span')
+
+  //   heart.id = "heartSpan"
+
+  //   let x = e.offsetX
+  //   let y = e.offsetY
+  //   heart.style.left = x + 'px'
+  //   heart.style.right = y + 'px'
+
+  //   let size = Math.random() * 30
+  //   heart.style.width = 5 + size + 'px'
+  //   heart.style.height = 5 + size + 'px'
+
+  //   body.appendChild(heart)
+
+  //   setTimeout(function () {
+  //     heart.remove()
+  //   }, 1000)
+  // })
+</script>
+
+<script src="scripts/confetti.min.js" charset="utf-8"></script>
+<script src="scripts/index.js" charset="utf-8"></script>
+
+</html>
