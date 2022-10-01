@@ -36,6 +36,10 @@ li span {
   display: block;
   font-size: 4.5rem;
 }
+
+
+
+
 .merrywrap {
   position: absolute;
   right: 40px;
@@ -285,6 +289,14 @@ span::before {
   animation: fadeIn 3s;
 }
 
+/* .container {
+  animation: fadeOut;
+}
+
+@keyframes fadeOut {
+
+} */
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -295,3 +307,66 @@ span::before {
     margin-left: 25px;
   }
 }
+
+/* ------------ */
+
+/* --------------------- */
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  li {
+    font-size: 1.5rem;
+  }
+
+  li span {
+    font-size: 4.5rem;
+  }
+
+  #head {
+    font-size: 1.5rem;
+  }
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  li {
+    font-size: 1.2rem;
+  }
+
+  li span {
+    font-size: 4.2rem;
+  }
+
+  #head {
+    font-size: 1.2rem;
+  }
+}
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  li {
+    font-size: 1rem;
+  }
+
+  li span {
+    font-size: 3rem;
+  }
+
+  #head {
+    font-size: 1rem;
+  }
+}
+ 
+/* For Mobile Landscape View */
+/* @media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+  
+} */
+ 
+/* For Mobile Phones Portrait or Landscape View */
+/* @media screen and (max-device-width: 640px) {
+} */
+
+/* --------------------- */
