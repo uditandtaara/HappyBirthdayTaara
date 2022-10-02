@@ -529,7 +529,9 @@ heart.style.display = "none";
 let audio;
 function playAudio(url) {
     if (isAudioPlaying) return;
-    audio = new Audio(url).play();
+    // audio = new Audio(url).play();
+    const audio = document.getElementById("audio");
+    audio.play();
     console.log(audio);
     isAudioPlaying = true;
 

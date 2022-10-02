@@ -118,6 +118,8 @@
     <video src="After.mp4" controls></video>
     <img src="icons8-close-64.png" onclick="toggleAfter();" class="close" alt="">
   </div>
+
+  <audio src="happy-birthday-to-you-piano-version.mp3" loop id="audio" style="display: none;"></audio>
 </body>
 
 <script src="scripts/confetti.min.js" charset="utf-8"></script>
@@ -133,11 +135,16 @@
     console.log("hi");
   }
 
+  // let isAudioPlaying = false
   function toggleAfter() {
     const trailer = document.querySelectorAll(".trailer")[1];
     const video = document.querySelectorAll("video")[1];
-    const audio = document.querySelector("audio");
+    const audio = document.getElementById("audio");
 
+    console.log(audio.paused);
+    if (audio.paused == false) {
+      audio.pause()
+    } else audio.play()
     trailer.classList.toggle("active");
     video.pause();
   }
